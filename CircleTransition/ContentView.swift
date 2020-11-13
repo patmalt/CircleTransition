@@ -53,7 +53,7 @@ struct Detail: View {
             Spacer()
             VStack(alignment: .center) {
                 Spacer()
-                Text(verbatim: "Hello").font(.system(.headline)).foregroundColor(.white).matchedGeometryEffect(id: "Title", in: animation)
+                Text(verbatim: "Hello").font(.system(.headline)).foregroundColor(.white).matchedGeometryEffect(id: "Title", in: animation, isSource: false)
                 Stepper("Control", onIncrement: {}, onDecrement: {})
                 Spacer()
             }
